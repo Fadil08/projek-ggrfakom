@@ -11,7 +11,7 @@ xScale = 1
 yScale = 1
 rotate = 0
 
-def circle_utama(num_segment):
+def bacgroun(num_segment):
     glColor(0, 165, 0)
     glBegin(GL_POLYGON)
     # glColor()
@@ -115,7 +115,7 @@ def showScreen():
     # glScale(100,100,1)
     glTranslate(100,100,0)
     # glRotatef(90,200,200,1)
-    circle_utama(360)
+    bacgroun(360)
 
     glutSwapBuffers()
 
