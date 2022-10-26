@@ -1,9 +1,11 @@
+from tkinter import CENTER
+from turtle import color
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
 import math
 
-w,h= 500,500
+w,h= 350,350
 
 xPosition = 0
 yPosition = 0
@@ -11,61 +13,9 @@ xScale = 1
 yScale = 1
 rotate = 0
 
-def bacgroun(num_segment):
-    glColor(0, 165, 0)
-    glBegin(GL_POLYGON)
-    # glColor()
-    for i in range(360):
-        theta= 2 *3.1415926*i/360
-        x = 150 * math.cos(theta)
-        y = 150 * math.sin(theta)
-        glVertex2f(x + 0, y + 0)
-    glEnd()
-    #lingkaran ke2 warna putih
-    glBegin(GL_POLYGON)
-    glColor(255,255,255)
-    for i in range(num_segment):
-        theta= 2 *3.1415926*i/num_segment
-        x = 125 * math.cos(theta)
-        y = 125 * math.sin(theta)
-        glVertex2f(x + 0, y + 0)
-    glEnd()
-    # circle tengah ke3 warna hijau
-    glBegin(GL_POLYGON)
-    glColor(0, 165, 0)
-    for i in range(num_segment):
-        theta= 2 *3.1415926*i/num_segment
-        x = 80 * math.cos(theta)
-        y = 80 * math.sin(theta)
-        glVertex2f(x + 0, y + 0)
-    glEnd()
-    # balok pemotong 
-    glBegin(GL_QUADS)
-    glColor(255, 255, 255)
-    # glColor(0,170,1)
-    glVertex2f(-35, -150)#kiri bawah
-    glVertex2f(35, -150)#kana bawah
-    glVertex2f(35, -120)#kiri atas
-    glVertex2f(-35, -120)#kanan atas
-    glEnd()
-    # circle_a
-    glBegin(GL_POLYGON)
-    glColor(0,167,0)
-    for i in range(num_segment):
-        theta= 2 *3.1415926*i/num_segment
-        x = 12.5 * math.cos(theta)
-        y = 12.5 * math.sin(theta)
-        glVertex2f(x + -35, y + -133)
-    glEnd()
-    # circle b 
-    glBegin(GL_POLYGON)
-    glColor(0,167,0)
-    for i in range(num_segment):
-        theta= 2 *3.1415926*i/num_segment
-        x = 12.5 * math.cos(theta)
-        y = 12.5 * math.sin(theta)
-        glVertex2f(x + 35, y + -133 )
-    glEnd()
+def background():
+    #membuat awan
+    pass
 
 def mySpecialKeyboard(key,x,y):
     
@@ -100,23 +50,24 @@ def myKeyboard(key, x, y):
         rotate += 10
 
 def iterate():
-    glViewport(0, 0, 1000, 1000)
+    glViewport(0, 0, 300, 300)
     glMatrixMode(GL_PROJECTION)
     glLoadIdentity()
-    glOrtho(-1000, 1000, -1000, 1000, 0.0, 1.0)
+    glOrtho(-300, 300, -300, 300, 0.0, 1.0)
     glMatrixMode (GL_MODELVIEW)
     glLoadIdentity()
 
 def showScreen():
+    # GL_POSITION(CENTER)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
-    glClearColor(255,255,255,1)
+    glClearColor(1.0,167,1.0,1)
+    # glback(0,167,0)
     glLoadIdentity()
     iterate()
     # glScale(100,100,1)
-    glTranslate(100,100,0)
+    # glTranslate(100,100,0)
     # glRotatef(90,200,200,1)
-    bacgroun(360)
-
+    # background()
     glutSwapBuffers()
 
 
