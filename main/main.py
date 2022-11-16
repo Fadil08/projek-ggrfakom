@@ -54,17 +54,17 @@ def arena_labirin():
     glVertex2f(580, 500)#kiri bawah, kiri atas
     glEnd()
 
-    glBegin(GL_QUADS)#lanjutan bawah_bawah_kiri2
+    glBegin(GL_QUADS)#atasnya lagi bawah sendiri
     glVertex2f(550, 500)#kiri atas, kiri bawah
-    glVertex2f(800, 500)#<=kanan bawah, kanan atas
-    glVertex2f(800, 470)#<=kanan atas, kanan bawah
+    glVertex2f(950, 500)#<=kanan bawah, kanan atas
+    glVertex2f(950, 470)#<=kanan atas, kanan bawah
     glVertex2f(550, 470)#kiri bawah, kiri atas
     glEnd()
 
-    glBegin(GL_QUADS)#lanjutan2 bawah_bawah_kiri2
+    glBegin(GL_QUADS)#atasnya bawah sendiri
     glVertex2f(550, 330)#kiri atas, kiri bawah
-    glVertex2f(700, 330)#<=kanan bawah, kanan atas
-    glVertex2f(700, 300)#<=kanan atas, kanan bawah
+    glVertex2f(750, 330)#<=kanan bawah, kanan atas
+    glVertex2f(750, 300)#<=kanan atas, kanan bawah
     glVertex2f(550, 300)#kiri bawah, kiri atas
     glEnd()
 
@@ -166,6 +166,35 @@ def arena_labirin():
     glVertex2f(1110, 315)#<=kanan atas, kanan bawah
     glVertex2f(1080, 315)#kiri bawah, kiri atas
     glEnd()
+
+    glBegin(GL_QUADS)#kiri5
+    glVertex2f(720, 840)#kiri atas, kiri bawah
+    glVertex2f(750, 840)#<=kanan bawah, kanan atas
+    glVertex2f(750, 630)#<=kanan atas, kanan bawah
+    glVertex2f(720, 630)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#lanjutan kiri 5
+    glVertex2f(720, 860)#kiri atas, kiri bawah
+    glVertex2f(950, 860)#<=kanan bawah, kanan atas
+    glVertex2f(950, 830)#<=kanan atas, kanan bawah
+    glVertex2f(720, 830)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#mirror kiri 5
+    glVertex2f(920, 730)#kiri atas, kiri bawah
+    glVertex2f(950, 730)#<=kanan bawah, kanan atas
+    glVertex2f(950, 630)#<=kanan atas, kanan bawah
+    glVertex2f(920, 630)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)# bawah mirror kiri 5
+    glVertex2f(920, 500)#kiri atas, kiri bawah
+    glVertex2f(950, 500)#<=kanan bawah, kanan atas
+    glVertex2f(950, 310)#<=kanan atas, kanan bawah
+    glVertex2f(920, 310)#kiri bawah, kiri atas
+    glEnd()
+    
 def tamiya(x,y):
     glColor3ub(150, 0, 0)
     glBegin(GL_POLYGON)
