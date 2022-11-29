@@ -163,8 +163,8 @@ def arena_labirin():
     glBegin(GL_QUADS)#bawah tengah 1
     glVertex2f(1080, 1000)#kiri atas, kiri bawah
     glVertex2f(1110, 1000)#<=kanan bawah, kanan atas
-    glVertex2f(1110, 315)#<=kanan atas, kanan bawah
-    glVertex2f(1080, 315)#kiri bawah, kiri atas
+    glVertex2f(1110, 310)#<=kanan atas, kanan bawah
+    glVertex2f(1080, 310)#kiri bawah, kiri atas
     glEnd()
 
     glBegin(GL_QUADS)#kiri5
@@ -195,6 +195,69 @@ def arena_labirin():
     glVertex2f(920, 310)#kiri bawah, kiri atas
     glEnd()
     
+    glBegin(GL_QUADS)#tengah2
+    glVertex2f(1270, 1337)#kiri atas, kiri bawah
+    glVertex2f(1240, 1337)#<=kanan bawah, kanan atas
+    glVertex2f(1240, 835)#<=kanan atas, kanan bawah
+    glVertex2f(1270, 835)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#ataskanan
+    glVertex2f(1270, 1660)#kiri atas, kiri bawah
+    glVertex2f(1240, 1660)#<=kanan bawah, kanan atas
+    glVertex2f(1240, 1470)#<=kanan atas, kanan bawah
+    glVertex2f(1270, 1470)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#lanjutataskanan
+    glVertex2f(1240, 1500)#kiri atas, kiri bawah
+    glVertex2f(1430, 1500)#<=kanan bawah, kanan atas
+    glVertex2f(1430, 1470)#<=kanan atas, kanan bawah
+    glVertex2f(1240, 1470)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#lanjutataskanan2
+    glVertex2f(1430, 1490)#kiri atas, kiri bawah
+    glVertex2f(1400, 1490)#<=kanan bawah, kanan atas
+    glVertex2f(1400, 475)#<=kanan atas, kanan bawah
+    glVertex2f(1430, 475)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#bawahtengah2
+    glVertex2f(1240, 720)#kiri atas, kiri bawah
+    glVertex2f(1430, 720)#<=kanan bawah, kanan atas
+    glVertex2f(1430, 690)#<=kanan atas, kanan bawah
+    glVertex2f(1240, 690)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#bawahtengah3
+    glVertex2f(1240, 590)#kiri atas, kiri bawah
+    glVertex2f(1430, 590)#<=kanan bawah, kanan atas
+    glVertex2f(1430, 560)#<=kanan atas, kanan bawah
+    glVertex2f(1240, 560)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#bawahtengah4
+    glVertex2f(1090, 430)#kiri atas, kiri bawah
+    glVertex2f(1270, 430)#<=kanan bawah, kanan atas
+    glVertex2f(1270, 400)#<=kanan atas, kanan bawah
+    glVertex2f(1090, 400)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#bawahtengah5
+    glVertex2f(1270, 340)#kiri atas, kiri bawah
+    glVertex2f(1430, 340)#<=kanan bawah, kanan atas
+    glVertex2f(1430, 310)#<=kanan atas, kanan bawah
+    glVertex2f(1270, 310)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#bawahtengah6
+    glVertex2f(1270, 430)#kiri atas, kiri bawah
+    glVertex2f(1240, 430)#<=kanan bawah, kanan atas
+    glVertex2f(1240, 310)#<=kanan atas, kanan bawah
+    glVertex2f(1270, 310)#kiri bawah, kiri atas
+    glEnd()
+
 def tamiya(x,y):
     glColor3ub(150, 0, 0)
     glBegin(GL_POLYGON)
