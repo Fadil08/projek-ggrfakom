@@ -7,8 +7,8 @@ w,h= 1360,1000
 def arena_labirin():
     glBegin(GL_QUADS)#atas
     glVertex2f(150, 1660)#kiri atas, kiri bawah
-    glVertex2f(1600, 1660)#<=kanan bawah, kanan atas
-    glVertex2f(1600, 1630)#<=kanan atas, kanan bawah
+    glVertex2f(1570, 1660)#<=kanan bawah, kanan atas
+    glVertex2f(1570, 1630)#<=kanan atas, kanan bawah
     glVertex2f(150, 1630)#kiri bawah, kiri atas
     glEnd()
 
@@ -257,6 +257,28 @@ def arena_labirin():
     glVertex2f(1240, 310)#<=kanan atas, kanan bawah
     glVertex2f(1270, 310)#kiri bawah, kiri atas
     glEnd()
+
+    glBegin(GL_QUADS)#bawahtengah7
+    glVertex2f(1400, 490)#kiri atas, kiri bawah
+    glVertex2f(1570, 490)#<=kanan bawah, kanan atas
+    glVertex2f(1570, 460)#<=kanan atas, kanan bawah
+    glVertex2f(1400, 460)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#bawahtengah8
+    glVertex2f(1570, 660)#kiri atas, kiri bawah
+    glVertex2f(1540, 660)#<=kanan bawah, kanan atas
+    glVertex2f(1540, 470)#<=kanan atas, kanan bawah
+    glVertex2f(1570, 470)#kiri bawah, kiri atas
+    glEnd()
+
+    glBegin(GL_QUADS)#kanan3
+    glVertex2f(1570, 1660)#kiri atas, kiri bawah
+    glVertex2f(1540, 1660)#<=kanan bawah, kanan atas
+    glVertex2f(1540, 1150)#<=kanan atas, kanan bawah
+    glVertex2f(1570, 1150)#kiri bawah, kiri atas
+    glEnd()
+
 
 def tamiya(x,y):
     glColor3ub(150, 0, 0)
